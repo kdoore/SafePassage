@@ -344,7 +344,6 @@
     <Compile Include="Assets\Scripts\States\StoryDevState.cs" />
     <Compile Include="Assets\Scripts\States\StoryState.cs" />
     <Compile Include="Assets\Scripts\Timer.cs" />
-    <Compile Include="Assets\Scripts\TogglePanel.cs" />
     <Compile Include="Assets\Scripts\TriggerPanelOpen.cs" />
     <Compile Include="Assets\Scripts\TriggerSetActive.cs" />
     <Compile Include="Assets\Scripts\Unused\FreeParallax\Scripts\FreeParallaxDemo.cs" />
@@ -356,6 +355,7 @@
     <Compile Include="Assets\Scripts\Unused\RendererExtensions.cs" />
     <Compile Include="Assets\Scripts\Unused\Score.cs" />
     <Compile Include="Assets\Scripts\Unused\Scroller.cs" />
+    <Compile Include="Assets\Scripts\Unused\TogglePanel.cs" />
     <Compile Include="Assets\Scripts\Unused\VerticalMoveScript.cs" />
     <Compile Include="Assets\Scripts\Utility.cs" />
   </ItemGroup>

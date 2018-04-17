@@ -8,7 +8,7 @@ public class Timer : MonoBehaviour {
 	public GameData gameData;
 	public GameSceneManager gameSceneManager; 
 
-	private bool initialized=false; 
+ 
 
 	public float seconds,minutes; 
 
@@ -25,12 +25,9 @@ public class Timer : MonoBehaviour {
 	}
 
 	public void initializeObjectRef(){
-		if(manager ==null && GameObject.Find ("gameManager") !=null){
-			manager=GameObject.Find ("gameManager").GetComponent<StateManager>();
+		 	manager=GameObject.Find ("gameManager").GetComponent<StateManager>();
 			gameData=GameObject.Find ("gameManager").GetComponent<GameData>();
-			
-			initialized=true;
-		}
+				 
 	}
 
 	// Update is called once per frame
@@ -40,9 +37,7 @@ public class Timer : MonoBehaviour {
 	minutes = (int)(Time.timeSinceLevelLoad/60f);
 	seconds = (int)(Time.timeSinceLevelLoad % 60f);
 
-		if(!initialized){
-			initializeObjectRef();
-		} 
+		
 
 	//levelTxt.text = "LEVEL 1"; 
 
@@ -56,18 +51,11 @@ public class Timer : MonoBehaviour {
 			Winner();
 		}
 
-		if(!initialized){
-			initializeObjectRef();
-		} 
-
 	}
 
 	public void levelUp(){
 		gameSceneManager.currentMode = GameMode.level2;
 		Debug.Log ("level 2 activated"); 
-		//gameSceneManager.level1GameObjects.SetActive (false); 
-		//GameObject.Find ("Level2GameObjects");
-		//gameSceneManager.level2GameObjects.SetActive (true);
 		levelTxt.text = "LEVEL 2" ; 
 
 		
@@ -76,8 +64,7 @@ public class Timer : MonoBehaviour {
 	public void Winner(){ 
 		Debug.Log ("begin state end activated"); 
 		Application.LoadLevel ("Battle Game Win");
-		manager.SwitchState(new BattleGameWinState(manager));
-		
+		manager.SwitchState(new BattleGameWinState(manager));	
 		
 	}
 

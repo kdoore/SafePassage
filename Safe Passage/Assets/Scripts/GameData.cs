@@ -61,20 +61,32 @@ public class GameData : MonoBehaviour {
 
 	public void Add(PickUp pickup){
 		PickUpType type = pickup.type;
-		int oldTotal = 0;
-		if(inventory.TryGetValue(type, out oldTotal))
-            inventory[type] = oldTotal + pickup.value ;  //use key as index
-		else
-            inventory.Add (type, pickup.value);  //how much does each pickup count for
 		
-		WarriorScore += pickup.value;
+        int count = 0;
 
-		UpdateWarriorData(); //see if this is now the high score to reset Player Prefs 
+        if (inventory.TryGetValue(type, out count))
+        {
+            //Debug.Log("inventory count" + count);
+            count++;
+            inventory[type] = count;  //use key as index
+        }
+        else
+        {
+            inventory.Add(type, 1);  //now have 1 item
+        }
+		WarriorScore += pickup.value;
+        UpdateWarriorData(); //see if this is now the high score to reset Player Prefs 
+
         if (onPlayerDataUpdate != null)
         {
             onPlayerDataUpdate.Invoke();
         }
-    
+     }
+
+    public int GetPeachCount(){
+        int count = 0;
+        inventory.TryGetValue(PickUpType.Peach, out count);
+        return count;
     }
 
-}
+} //end GameData

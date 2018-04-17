@@ -83,12 +83,14 @@ public enum Player_State  // input parameter signals to send to Animator control
         }
 	} // end FixedUpdate
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    void OnTriggerEnter2D(Collider2D hitObject)
     {
-        if (collision.CompareTag("PickUp"))
+        if (hitObject.CompareTag("PickUp"))
         {
             Debug.Log("Hit PickuP");
-            Destroy(collision.gameObject);
+            PickUp item = hitObject.GetComponent<PickUp>();
+            GameData.instanceRef.Add(item);
+            item.DestroyMe();
         }
     }
 
