@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio for Mac
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Safe Passage", "Safe Passage.csproj", "{3EAB5B2F-97B9-859F-9359-A94A0067B6AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Safe Passage.Editor", "Safe Passage.Editor.csproj", "{ACEA78CA-D985-BDF9-37BE-C4D9491E24C5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3EAB5B2F-97B9-859F-9359-A94A0067B6AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EAB5B2F-97B9-859F-9359-A94A0067B6AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EAB5B2F-97B9-859F-9359-A94A0067B6AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EAB5B2F-97B9-859F-9359-A94A0067B6AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ACEA78CA-D985-BDF9-37BE-C4D9491E24C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACEA78CA-D985-BDF9-37BE-C4D9491E24C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACEA78CA-D985-BDF9-37BE-C4D9491E24C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACEA78CA-D985-BDF9-37BE-C4D9491E24C5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
