@@ -1,17 +1,16 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+public enum Player_State  // input parameter signals to send to Animator controller
+{
+    idle = 0,
+    walk = 1
+}
+
 
 public class PlayerController3 : MonoBehaviour
 {
-
-
-public enum Player_State  // input parameter signals to send to Animator controller
-    {
-        idle = 0,
-        walk = 1
-    }
-
+    
     public FreeParallax parallax;
 	private Animator animator;
 	private Transform myTransform;
