@@ -310,6 +310,7 @@
     <Compile Include="Assets\Scripts\DialogManager.cs" />
     <Compile Include="Assets\Scripts\FadePanel.cs" />
     <Compile Include="Assets\Scripts\FeaturePanelUI.cs" />
+    <Compile Include="Assets\Scripts\FollowBehavior.cs" />
     <Compile Include="Assets\Scripts\FollowPlayer.cs" />
     <Compile Include="Assets\Scripts\GameData.cs" />
     <Compile Include="Assets\Scripts\GameSceneManager.cs" />
