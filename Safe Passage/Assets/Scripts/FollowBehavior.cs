@@ -6,12 +6,17 @@ using UnityEngine;
 
 public class FollowBehavior : MonoBehaviour {
    
-    public GameObject target;
+    public PlayerController3 target;
     Animator animator;
     float mobRange;
+    bool facingRight;
+
 
     void Start(){
         animator = GetComponent<Animator>();
+        mobRange = 2f;
+        facingRight = true;
+
     }
 
     void Update(){
@@ -32,34 +37,49 @@ public class FollowBehavior : MonoBehaviour {
         var totalDistance = Mathf.Pow(xDistance, 2) + Mathf.Pow(yDistance, 2);
         totalDistance = Mathf.Sqrt(totalDistance);
 
-        Debug.Log("Total Distance: " + totalDistance);
-
         FacePlayer(xDistance, totalDistance);
     }
 
+    //function takes in distance to Player along X, total Distance to travel to get to player?
     void FacePlayer(float xDistance, float totalDistance)
     {
-        if (xDistance < -0.5)
+        if (xDistance < - 0.5) //thisAI is Moving to Left along X 
         {
-            transform.localScale = new Vector3(-1, 1, 1);
+           
+            //target just started facing left, but followers still facing right
+          
             if (totalDistance > mobRange)
             {
                 transform.Translate(1 * Time.deltaTime, 0, 0, Space.World);
-                animator.SetInteger("Player_State", (int)Player_State.idle);
+                animator.SetInteger("Player_State", (int)Player_State.walk);
+                 //target facing left, 
+                if (!target.facingRight && facingRight)//target turned left, thisAI needs to turn left
+                {
+                    //Invoke("flip", Random.Range(.5f, 2f)); //give a 1 second pause
+                    flip();
+                    Debug.Log("Fipped Left");
+                }
             }
             else
             {
-                animator.SetInteger("playerState", 0);
+                animator.SetInteger("Player_State", (int)Player_State.idle);
+
             }
 
         }
         if (xDistance > 0.5)
         {
-            transform.localScale = new Vector3(1, 1, 1);
+           // transform.localScale = new Vector3(1, 1, 1);
             if (totalDistance > mobRange)
             {
+                
                 transform.Translate(-1 * Time.deltaTime, 0, 0, Space.World);
                 animator.SetInteger("Player_State", (int)Player_State.walk);
+                if (target.facingRight && !facingRight)
+                {
+                   // Invoke("flip", Random.Range(.5f, 2f)); //give a 1 second pause
+                    //Debug.Log("Fipped Right");
+                }
             }
             else //not moving
             {
@@ -67,4 +87,13 @@ public class FollowBehavior : MonoBehaviour {
             }
         }
     }
+
+    void flip()
+    {
+        facingRight = !facingRight;
+        Vector3 theScale = transform.localScale;
+        theScale.x *= -1;
+        transform.localScale = theScale;
+    }
+
 }

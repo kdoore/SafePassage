@@ -308,6 +308,7 @@
     <Compile Include="Assets\Scripts\ConversationList.cs" />
     <Compile Include="Assets\Scripts\DialogController.cs" />
     <Compile Include="Assets\Scripts\DialogManager.cs" />
+    <Compile Include="Assets\Scripts\Enemy.cs" />
     <Compile Include="Assets\Scripts\FadePanel.cs" />
     <Compile Include="Assets\Scripts\FeaturePanelUI.cs" />
     <Compile Include="Assets\Scripts\FollowBehavior.cs" />
@@ -315,6 +316,7 @@
     <Compile Include="Assets\Scripts\GameData.cs" />
     <Compile Include="Assets\Scripts\GameSceneManager.cs" />
     <Compile Include="Assets\Scripts\GameState.cs" />
+    <Compile Include="Assets\Scripts\GhostSpawner.cs" />
     <Compile Include="Assets\Scripts\HealthBar.cs" />
     <Compile Include="Assets\Scripts\InventoryDisplay.cs" />
     <Compile Include="Assets\Scripts\MoveScript.cs" />
@@ -325,11 +327,11 @@
     <Compile Include="Assets\Scripts\PickUp.cs" />
     <Compile Include="Assets\Scripts\PlayerController3.cs" />
     <Compile Include="Assets\Scripts\PlayerController4.cs" />
+    <Compile Include="Assets\Scripts\PlayerHealth.cs" />
     <Compile Include="Assets\Scripts\ScreenFader.cs" />
     <Compile Include="Assets\Scripts\SelectCharacter.cs" />
     <Compile Include="Assets\Scripts\SimpleConversationList.cs" />
     <Compile Include="Assets\Scripts\SimpleDialogManager.cs" />
-    <Compile Include="Assets\Scripts\Spawner.cs" />
     <Compile Include="Assets\Scripts\States\BattleGameEndState.cs" />
     <Compile Include="Assets\Scripts\States\BattleGameState.cs" />
     <Compile Include="Assets\Scripts\States\BattleGameWinState.cs" />
@@ -347,6 +349,7 @@
     <Compile Include="Assets\Scripts\Timer.cs" />
     <Compile Include="Assets\Scripts\TriggerPanelOpen.cs" />
     <Compile Include="Assets\Scripts\TriggerSetActive.cs" />
+    <Compile Include="Assets\Scripts\TriggerSimpleDialog.cs" />
     <Compile Include="Assets\Scripts\Unused\FreeParallax\Scripts\FreeParallaxDemo.cs" />
     <Compile Include="Assets\Scripts\Unused\Lives.cs" />
     <Compile Include="Assets\Scripts\Unused\Player.cs" />

@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.Events;
 using System.Collections;
 
 public enum Player_State  // input parameter signals to send to Animator controller
@@ -10,21 +11,22 @@ public enum Player_State  // input parameter signals to send to Animator control
 
 public class PlayerController3 : MonoBehaviour
 {
-    
-    public FreeParallax parallax;
+
+     
+    private FreeParallax parallax;
 	private Animator animator;
-	private Transform myTransform;
+	//private Transform myTransform;
 	private Rigidbody2D myRBody2D;
 	public float forceX;
-	private bool facingRight;
+	public bool facingRight;
     public float speed= 2.0f;  //initialize
+
 
 	void Awake ()
 	{
 		animator = GetComponent<Animator> ();
-		myTransform = GetComponent<Transform> ();
+        facingRight = true;
 		myRBody2D = GetComponent<Rigidbody2D> ();
-        parallax =  Object.FindObjectOfType<FreeParallax>();
 	}
 
 	void Start ()
@@ -32,6 +34,11 @@ public class PlayerController3 : MonoBehaviour
 		animator.SetInteger ("Player_State", (int)Player_State.idle);
 		facingRight = true;
 		forceX = 50f;
+        parallax = Object.FindObjectOfType<FreeParallax>();
+        if (parallax == null)
+        {
+            Debug.Log("No Paralax for player");
+        }
 	}
 
 
@@ -97,9 +104,9 @@ public class PlayerController3 : MonoBehaviour
 	void flip ()
 	{
 		facingRight = !facingRight;
-		Vector3 theScale = myTransform.localScale;
+		Vector3 theScale =transform.localScale;
 		theScale.x *= -1;
-		myTransform.localScale = theScale;
+		transform.localScale = theScale;
 	}
 
 }  // end class
