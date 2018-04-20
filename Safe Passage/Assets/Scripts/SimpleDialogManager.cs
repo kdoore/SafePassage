@@ -27,9 +27,13 @@ public class SimpleDialogManager : MonoBehaviour {
        
         animator = this.GetComponent<Animator>();
 
-        openDialogBtn = GameObject.Find("OpenDialogButton").GetComponent<Button>();
-        openDialogBtn.onClick.AddListener(openDialog);
-
+        GameObject dialogBtn = GameObject.Find("OpenDialogButton");
+       
+        if (dialogBtn != null)  //may be triggered from something else
+        {
+            openDialogBtn = dialogBtn.GetComponent<Button>();
+            openDialogBtn.onClick.AddListener(openDialog);
+        }
         nextButton = GameObject.Find("NextButton").GetComponent<Button>();
         nextButton.onClick.AddListener(getNextDialog);
 
@@ -42,7 +46,10 @@ public class SimpleDialogManager : MonoBehaviour {
         if (!moreDialog)
         {
             Utility.HideCG(cg); // close panel
-            openDialogBtn.gameObject.SetActive(true);
+            if (openDialogBtn != null)
+            {
+                openDialogBtn.gameObject.SetActive(true);
+            }
             closeDialog();
         }
     }
@@ -52,7 +59,10 @@ public class SimpleDialogManager : MonoBehaviour {
         Utility.ShowCG(cg);
         animator.SetBool("IsOpen", true);
         NextDialog();
-        openDialogBtn.gameObject.SetActive(false);
+        if (openDialogBtn != null)
+        {
+            openDialogBtn.gameObject.SetActive(false);
+        }
     }
 
     public void closeDialog()
@@ -60,7 +70,10 @@ public class SimpleDialogManager : MonoBehaviour {
 
         Utility.HideCG(cg);
         animator.SetBool("IsOpen", false);
-        openDialogBtn.gameObject.SetActive(true);
+        if (openDialogBtn != null)
+        {
+            openDialogBtn.gameObject.SetActive(true);
+        }
     }
 
     public bool NextDialog()
