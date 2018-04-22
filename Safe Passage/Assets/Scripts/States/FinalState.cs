@@ -61,7 +61,7 @@ public class FinalState : IStateBase{//using state base for methods and activeSt
 		Debug.Log ("Restart 2 Things are Happening");//only happens once 
 
 		//restart the game 
-		Application.LoadLevel ("Start") ; 
+		SceneManager.LoadScene ("Start") ; 
         StateManager.instanceRef.SwitchState(new StartState()); 
 		
 	}

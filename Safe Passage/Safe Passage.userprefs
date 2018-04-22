@@ -1,28 +1,37 @@
 ﻿<Properties StartupConfiguration="{3EAB5B2F-97B9-859F-9359-A94A0067B6AE}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/TriggerSimpleDialog.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/BattleScripts/ShowUnitStat.cs">
     <Files>
-      <File FileName="Assets/Scripts/FadePanel.cs" Line="23" Column="9" />
-      <File FileName="Assets/Scripts/DialogController.cs" Line="33" Column="1" />
-      <File FileName="Assets/Scripts/PickUp.cs" Line="23" Column="49" />
-      <File FileName="Assets/Scripts/GameData.cs" Line="69" Column="15" />
-      <File FileName="Assets/Scripts/FeaturePanelUI.cs" Line="7" Column="4" />
-      <File FileName="Assets/Scripts/States/IntroState.cs" Line="37" Column="6" />
-      <File FileName="Assets/Scripts/States/StartState.cs" Line="29" Column="5" />
-      <File FileName="Assets/Scripts/PlayerController3.cs" Line="75" Column="55" />
-      <File FileName="Assets/Scripts/Parallax/FreeParallax.cs" Line="294" Column="1" />
-      <File FileName="Assets/Scripts/Timer.cs" Line="11" Column="2" />
-      <File FileName="Assets/Scripts/TriggerPanelOpen.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/HealthBar.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/ConversationList.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/FollowPlayer.cs" Line="30" Column="1" />
-      <File FileName="Assets/Scripts/FollowBehavior.cs" Line="72" Column="8" />
-      <File FileName="Assets/Scripts/Parallax/CameraFollow.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/PlayerHealth.cs" Line="80" Column="5" />
-      <File FileName="Assets/Scripts/Parallax/BackgroundParallax.cs" Line="6" Column="21" />
-      <File FileName="Assets/Scripts/Parallax/BackgroundPropSpawner.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/GhostSpawner.cs" Line="12" Column="29" />
-      <File FileName="Assets/Scripts/TriggerSimpleDialog.cs" Line="20" Column="1" />
-      <File FileName="Assets/Scripts/SimpleDialogManager.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/BattleScripts/AttackTarget.cs" Line="41" Column="40" />
+      <File FileName="Assets/Scripts/BattleScripts/CollectReward.cs" Line="11" Column="75" />
+      <File FileName="Assets/Scripts/BattleScripts/CreateEnemyMenuItems.cs" Line="40" Column="1" />
+      <File FileName="Assets/Scripts/BattleScripts/TurnSystem.cs" Line="30" Column="19" />
+      <File FileName="Assets/Scripts/BattleScripts/SelectUnit.cs" Line="32" Column="9" />
+      <File FileName="Assets/Scripts/BattleScripts/ChangeScene.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/BattleScripts/UnitStats.cs" Line="37" Column="1" />
+      <File FileName="Assets/Scripts/DialogController.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/BattleScripts/AddButtonCallback.cs" Line="18" Column="68" />
+      <File FileName="Assets/Scripts/BattleScripts/PlayerUnitAction.cs" Line="49" Column="9" />
+      <File FileName="Assets/Scripts/BattleScripts/EnemyUnitAction.cs" Line="39" Column="43" />
+      <File FileName="Assets/Scripts/BattleScripts/KillEnemy.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/BattleScripts/KillDamageText.cs" Line="16" Column="54" />
+      <File FileName="Assets/Scripts/BattleScripts/StartBattle.cs" Line="22" Column="4" />
+      <File FileName="Assets/Scripts/BattleScripts/HUDController.cs" Line="16" Column="12" />
+      <File FileName="Assets/Scripts/States/BattleGameEndState.cs" Line="10" Column="2" />
+      <File FileName="Assets/Scripts/States/BattleGameState.cs" Line="27" Column="3" />
+      <File FileName="Assets/Scripts/Unused/Player.cs" Line="21" Column="17" />
+      <File FileName="Assets/Scripts/States/BattleGameWinState.cs" Line="25" Column="41" />
+      <File FileName="Assets/Scripts/Timer.cs" Line="15" Column="92" />
+      <File FileName="Assets/Scripts/States/IntroState.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/States/IStateBase.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/States/StartState.cs" Line="10" Column="18" />
+      <File FileName="Assets/Scripts/States/StoryDevState.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/States/StateManager.cs" Line="27" Column="16" />
+      <File FileName="Assets/Scripts/DialogManager.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/States/EndState.cs" Line="45" Column="9" />
+      <File FileName="Assets/Scripts/States/FinalState.cs" Line="64" Column="25" />
+      <File FileName="Assets/Scripts/States/Dialog1State.cs" Line="13" Column="4" />
+      <File FileName="Assets/Scripts/BattleScripts/ShowUnitHealth.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/BattleScripts/ShowUnitStat.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

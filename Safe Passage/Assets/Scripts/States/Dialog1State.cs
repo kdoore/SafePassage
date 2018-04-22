@@ -10,8 +10,7 @@ public class Dialog1State : IStateBase {
     private GameScene scene;
     private FadePanel fadePanel;
     private ScreenFader screenFader;
-    //private GameObject openDialogButton; //disable button and open when scene starts
-
+   
     public GameScene Scene
     {
         get { return scene; }

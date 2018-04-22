@@ -303,18 +303,29 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\AddButtonCallback.cs" />
-    <Compile Include="Assets\Scripts\AttackTarget.cs" />
-    <Compile Include="Assets\Scripts\ChangeScene.cs" />
+    <Compile Include="Assets\Scripts\BattleScripts\AddButtonCallback.cs" />
+    <Compile Include="Assets\Scripts\BattleScripts\AttackTarget.cs" />
+    <Compile Include="Assets\Scripts\BattleScripts\ChangeScene.cs" />
+    <Compile Include="Assets\Scripts\BattleScripts\CollectReward.cs" />
+    <Compile Include="Assets\Scripts\BattleScripts\CreateEnemyMenuItems.cs" />
+    <Compile Include="Assets\Scripts\BattleScripts\EnemyUnitAction.cs" />
+    <Compile Include="Assets\Scripts\BattleScripts\HUDController.cs" />
+    <Compile Include="Assets\Scripts\BattleScripts\KillDamageText.cs" />
+    <Compile Include="Assets\Scripts\BattleScripts\KillEnemy.cs" />
+    <Compile Include="Assets\Scripts\BattleScripts\PlayerUnitAction.cs" />
+    <Compile Include="Assets\Scripts\BattleScripts\RunFromBattle.cs" />
+    <Compile Include="Assets\Scripts\BattleScripts\SelectUnit.cs" />
+    <Compile Include="Assets\Scripts\BattleScripts\ShowUnitHealth.cs" />
+    <Compile Include="Assets\Scripts\BattleScripts\ShowUnitStat.cs" />
+    <Compile Include="Assets\Scripts\BattleScripts\SpawnEnemy.cs" />
+    <Compile Include="Assets\Scripts\BattleScripts\StartBattle.cs" />
+    <Compile Include="Assets\Scripts\BattleScripts\TurnSystem.cs" />
+    <Compile Include="Assets\Scripts\BattleScripts\UnitStats.cs" />
     <Compile Include="Assets\Scripts\Character.cs" />
-    <Compile Include="Assets\Scripts\CollectReward.cs" />
     <Compile Include="Assets\Scripts\ConversationEntry.cs" />
     <Compile Include="Assets\Scripts\ConversationList.cs" />
-    <Compile Include="Assets\Scripts\CreateEnemyMenuItems.cs" />
     <Compile Include="Assets\Scripts\DialogController.cs" />
     <Compile Include="Assets\Scripts\DialogManager.cs" />
-    <Compile Include="Assets\Scripts\Enemy.cs" />
-    <Compile Include="Assets\Scripts\EnemyUnitAction.cs" />
     <Compile Include="Assets\Scripts\FadePanel.cs" />
     <Compile Include="Assets\Scripts\FeaturePanelUI.cs" />
     <Compile Include="Assets\Scripts\FollowBehavior.cs" />
@@ -325,8 +336,6 @@
     <Compile Include="Assets\Scripts\GhostSpawner.cs" />
     <Compile Include="Assets\Scripts\HealthBar.cs" />
     <Compile Include="Assets\Scripts\InventoryDisplay.cs" />
-    <Compile Include="Assets\Scripts\KillDamageText.cs" />
-    <Compile Include="Assets\Scripts\KillEnemy.cs" />
     <Compile Include="Assets\Scripts\MoveScript.cs" />
     <Compile Include="Assets\Scripts\Parallax\BackgroundParallax.cs" />
     <Compile Include="Assets\Scripts\Parallax\BackgroundPropSpawner.cs" />
@@ -334,20 +343,10 @@
     <Compile Include="Assets\Scripts\Parallax\FreeParallax.cs" />
     <Compile Include="Assets\Scripts\PickUp.cs" />
     <Compile Include="Assets\Scripts\PlayerController3.cs" />
-    <Compile Include="Assets\Scripts\PlayerController4.cs" />
-    <Compile Include="Assets\Scripts\PlayerHealth.cs" />
-    <Compile Include="Assets\Scripts\PlayerUnitAction.cs" />
-    <Compile Include="Assets\Scripts\RunFromBattle.cs" />
     <Compile Include="Assets\Scripts\ScreenFader.cs" />
     <Compile Include="Assets\Scripts\SelectCharacter.cs" />
-    <Compile Include="Assets\Scripts\SelectUnit.cs" />
-    <Compile Include="Assets\Scripts\ShowUnitHealth.cs" />
-    <Compile Include="Assets\Scripts\ShowUnitMana.cs" />
-    <Compile Include="Assets\Scripts\ShowUnitStat.cs" />
     <Compile Include="Assets\Scripts\SimpleConversationList.cs" />
     <Compile Include="Assets\Scripts\SimpleDialogManager.cs" />
-    <Compile Include="Assets\Scripts\SpawnEnemy.cs" />
-    <Compile Include="Assets\Scripts\StartBattle.cs" />
     <Compile Include="Assets\Scripts\States\BattleGameEndState.cs" />
     <Compile Include="Assets\Scripts\States\BattleGameState.cs" />
     <Compile Include="Assets\Scripts\States\BattleGameWinState.cs" />
@@ -357,28 +356,19 @@
     <Compile Include="Assets\Scripts\States\FinalState.cs" />
     <Compile Include="Assets\Scripts\States\IntroState.cs" />
     <Compile Include="Assets\Scripts\States\IStateBase.cs" />
-    <Compile Include="Assets\Scripts\States\OptionsState.cs" />
     <Compile Include="Assets\Scripts\States\StartState.cs" />
     <Compile Include="Assets\Scripts\States\StateManager.cs" />
     <Compile Include="Assets\Scripts\States\StoryDevState.cs" />
-    <Compile Include="Assets\Scripts\States\StoryState.cs" />
     <Compile Include="Assets\Scripts\Timer.cs" />
     <Compile Include="Assets\Scripts\TriggerPanelOpen.cs" />
     <Compile Include="Assets\Scripts\TriggerSetActive.cs" />
     <Compile Include="Assets\Scripts\TriggerSimpleDialog.cs" />
-    <Compile Include="Assets\Scripts\TurnSystem.cs" />
-    <Compile Include="Assets\Scripts\UnitStats.cs" />
     <Compile Include="Assets\Scripts\Unused\FreeParallax\Scripts\FreeParallaxDemo.cs" />
     <Compile Include="Assets\Scripts\Unused\Lives.cs" />
     <Compile Include="Assets\Scripts\Unused\Player.cs" />
-    <Compile Include="Assets\Scripts\Unused\PlayerController2.cs" />
-    <Compile Include="Assets\Scripts\Unused\PlayerMove.cs" />
     <Compile Include="Assets\Scripts\Unused\Redo.cs" />
-    <Compile Include="Assets\Scripts\Unused\RendererExtensions.cs" />
     <Compile Include="Assets\Scripts\Unused\Score.cs" />
-    <Compile Include="Assets\Scripts\Unused\Scroller.cs" />
     <Compile Include="Assets\Scripts\Unused\TogglePanel.cs" />
-    <Compile Include="Assets\Scripts\Unused\VerticalMoveScript.cs" />
     <Compile Include="Assets\Scripts\Utility.cs" />
   </ItemGroup>
   <ItemGroup>
